@@ -1,8 +1,26 @@
 aid: provi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/provi.png
 name: Provi
-description: 'Provi is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Provi is a B2B beverage alcohol marketplace that digitizes procurement
+  across the three-tier distribution system, connecting buyers (bars, restaurants,
+  and retail stores) with distributors, sales representatives, and suppliers/brands.
+  The platform consolidates product discovery across distributor catalogs, direct
+  messaging with sales reps, order management and processing, and brand showcase tools
+  into a single ordering experience. Provi was surfaced as a portfolio company of
+  Bessemer Venture Partners and added to the API Evangelist network. As of this enrichment
+  pass the company publishes no public developer API, OpenAPI, or developer portal;
+  this profile captures its identity, web properties, and domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/provi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Unknown
+- Beverage
+- Alcohol
+- Marketplace
+- B2B
+- E-commerce
+- Distribution
+- Hospitality
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,36 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/provi-domain-security.yml
 - type: Website
   url: https://www.provi.com/
+- type: About
+  url: https://www.provi.com/about-us
+- type: Blog
+  url: https://www.provi.com/blog
+- type: HelpCenter
+  url: https://support.provi.com/s/
+- type: Support
+  url: https://help.provi.com
+- type: SignUp
+  url: https://app.provi.com/sign-up
+- type: Login
+  url: https://app.provi.com/users/sign_in
+- type: TermsOfService
+  url: https://app.provi.com/terms
+- type: PrivacyPolicy
+  url: https://app.provi.com/privacy
+- type: Contact
+  url: https://www.provi.com/contact
+- type: Careers
+  url: https://www.provi.com/careers
+- type: Partners
+  url: https://www.provi.com/partnerships
+- type: LinkedIn
+  url: https://www.linkedin.com/company/provihq/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
